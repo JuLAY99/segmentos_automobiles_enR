@@ -1,0 +1,10 @@
+El código utilizado en Rstudio es : library(ggplot2)
+ggplot(ganancia_x_marca, aes(x = brand, y = cantidad, fill = brand)) +
+  geom_col() +
+  labs(
+    title = "más unidades vendidas",
+    x = "Marca",
+    y = "N° de unidades"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "cantidad")
